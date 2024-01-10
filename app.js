@@ -70,11 +70,6 @@ function addaction(event) {
   //Add action to local
   saveLocalactions(action);
 
-  //Check mark button
-  const completedButton = document.createElement("button");
-  completedButton.innerHTML = '<i class="fas fa-check"></i>';
-  completedButton.classList.add("complete-btn");
-  actionDiv.appendChild(completedButton);
   //Check trash button
   const trashButton = document.createElement("button");
   trashButton.innerHTML = '<i class="fas fa-trash"></i>';
@@ -84,6 +79,8 @@ function addaction(event) {
   actionList.appendChild(actionDiv);
   //Clear input
   actionName.value = "";
+  actionPrice.value = "";
+  actionQuantity.value = "";
 }
 
 function deleteCheck(e) {
@@ -156,11 +153,6 @@ function getactions() {
     newTotal.classList.add("action-item");
     actionDiv.appendChild(newTotal);
 
-    //Check mark button
-    const completedButton = document.createElement("button");
-    completedButton.innerHTML = '<i class="fas fa-check"></i>';
-    completedButton.classList.add("complete-btn");
-    actionDiv.appendChild(completedButton);
     //Check trash button
     const trashButton = document.createElement("button");
     trashButton.innerHTML = '<i class="fas fa-trash"></i>';
