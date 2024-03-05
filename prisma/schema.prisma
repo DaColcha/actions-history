@@ -1,0 +1,19 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model actions {
+  id_action         Int       @id
+  name_action       String?   @db.VarChar(50)
+  date_action       DateTime? @db.Date
+  quantity          Int?
+  price             Float?
+  change_percentage String?   @db.VarChar(10)
+  change            Float?
+  total             Float?    @default(dbgenerated("((quantity)::double precision * price)"))
+}

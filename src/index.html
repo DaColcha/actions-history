@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Action Tracing</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Action Tracing</h1>
+      <i class="fa-solid fa-coins"></i>
+    </header>
+
+    <form>
+      <label for="name">Action Name</label>
+      <input type="text" class="name" />
+
+      <label for="price">Action Price ($)</label>
+      <input type="number" class="price" />
+
+      <label for="quantity">Quantity</label>
+      <input type="number" class="quantity" />
+    
+      <button class="action-button" type="submit">
+        <i class="fa-solid fa-plus"></i>
+      </button>
+    </form>
+
+    <div class="action-container">
+      <ul class="header-list">
+        <li>Name</li>
+        <li>Date</li>
+        <li>Price ($)</li>
+        <li>Quantity</li>
+        <li>Total($)</li>
+      </ul>
+      <ul class="action-list"></ul>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
