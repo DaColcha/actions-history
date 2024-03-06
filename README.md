@@ -8,5 +8,9 @@ Bienvenidos a la aplicación Action History, creada para ayudarte a realizar un 
 ## Vista Previa
 <img src="https://github.com/DaColcha/actions-history/blob/99f80aa8d4eacffe1e9fbdc3c053288b740dc4c0/VistaPrevia/page.png" alt="OneDrive Logo" width="650px" />
 
-### Documentación
+### Documentación VERSION 1
 <a href ="https://epnecuador-my.sharepoint.com/:f:/g/personal/dario_charro_epn_edu_ec/EqIlCgiq4_dKr4_8AkhKAggBGJPONSf3ID_ySNIF_bwxjw?e=PTnujY" target = "_blank"> <img src="https://img.shields.io/badge/OneDrive-0078D4.svg?style=for-the-badge&logo=microsoftonedrive&logoColor=white" alt="OneDrive Logo" width="100px" /></a>
+
+### Documentación VERSION 2
+<a href ="https://epnecuador-my.sharepoint.com/:f:/g/personal/daniela_colcha_epn_edu_ec/EhQGMHr4ZlhArKNdvWO6go4Bu3bvadwaA2ZClYKbY6zMTA?e=91FEO4" target = "_blank"> <img src="https://img.shields.io/badge/OneDrive-0078D4.svg?style=for-the-badge&logo=microsoftonedrive&logoColor=white" alt="OneDrive Logo" width="100px" /></a>
+
