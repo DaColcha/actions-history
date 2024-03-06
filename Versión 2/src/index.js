@@ -1,14 +1,13 @@
-import { getActionCurrentPrice } from './api/service';
-import { createAction } from './database';
-import { getAll } from './database';
+import { getActionCurrentPrice } from './api/service.js';
+import { createAction } from './database.js';
+import { getAll } from './database.js';
 
 //selectores
-const actionName = document.querySelector(".name");
-const actionPrice = document.querySelector(".price");
-const actionQuantity = document.querySelector(".quantity");
+const actionName = document.querySelector("#name");
+const actionPrice = document.querySelector("#price");
+const actionQuantity = document.querySelector("#quantity");
 const actionButton = document.querySelector(".action-button");
 const actionList = document.querySelector(".action-list");
-
 
 //event listeners
 document.addEventListener("DOMContentLoaded", getactions);
@@ -31,10 +30,11 @@ function obtenerFechaEnFormato() {
 async function addaction(event) {
   //Prevent form submited
   event.preventDefault();
+
+  console.log("hola");
   //action div
   const actionDiv = document.createElement("div");
   actionDiv.classList.add("action");
-
 
   //create action object
   const action = {
@@ -46,6 +46,8 @@ async function addaction(event) {
     currentPrice: await getActionCurrentPrice(actionName.value),
     change: ((currentPrice*100)/total)-100 + "%"
   };
+
+  console.log(action);
 
   //Create LI
   const newAction = document.createElement("li");
@@ -82,8 +84,6 @@ async function addaction(event) {
   newChange.innerText = action.change;
   newChange.classList.add("action-item");
   actionDiv.appendChild(newChange);
-
-  console.log(action);
 
   //Add action to local
   saveLocalactions(action);
